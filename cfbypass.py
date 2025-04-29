@@ -122,20 +122,3 @@ class CF_Solver:
             await self.browser.close()
         if self.playwright:
             await self.playwright.stop()
-
-
-# Example usage
-if __name__ == "__main__":
-    import sys
-
-    domain = sys.argv[1] if len(sys.argv) > 1 else "https://discord.com"
-    solver = CF_Solver(
-        domain, headless=True, slow_mo=100, poll_interval=1.0, max_wait=90.0
-    )
-    try:
-        cf = asyncio.run(solver.bypass())
-        print(f"{cf}")
-    except Exception as e:
-        print(f"Error: {e}")
-    finally:
-        asyncio.run(solver.close())
