@@ -24,7 +24,7 @@ You can use `Cloudflare Bypass` inside your own Python scripts or projects to au
 
 ```python
 import asyncio
-from cfbypass import CF_Solver  # Make sure the class is saved in cf_solver.py
+from cfbypass import CF_Solver
 
 async def get_cookie():
     solver = CF_Solver(
