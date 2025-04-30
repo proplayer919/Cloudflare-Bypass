@@ -16,7 +16,7 @@ playwright install
 
 ---
 
-## 🔧 Usage (as a Library)
+## 🔧 Usage
 
 You can use `Cloudflare Bypass` inside your own Python scripts or projects to automate the retrieval of the `cf_clearance` cookie from any Cloudflare-protected domain.
 
